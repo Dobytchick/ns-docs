@@ -33,5 +33,8 @@ When creating documents, this style guide should be consulted to keep everything
 ![image](https://user-images.githubusercontent.com/20385440/159188974-3ebb414c-f1b2-4e4c-b6f4-3ad14bedc5e1.png)
 
 ### Ordering
-Ordering should be done by prefixing a page file with a number and an underscore; i.e. 01_Getting Started.md; 02_Setting Up.md.
+1. Ordering should be done by prefixing a page file with a number and an underscore; i.e. 01_Getting Started.md; 02_Setting Up.md.
 ![image](https://user-images.githubusercontent.com/20385440/159189125-a691572f-a168-4a27-aa96-8edc9d5dc40f.png)
+2. The same can be done for categories.
+![image](https://user-images.githubusercontent.com/20385440/159189574-4f6a8141-2104-41aa-928b-ec4cf22fc8c4.png)
+
