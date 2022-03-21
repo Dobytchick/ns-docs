@@ -1,5 +1,3 @@
-# Developing Plugins
-
 Plugins are modular extensions to the schema that add or modify the gameplay of your gamemode. While it is possible to write all your code within the schema folder, using plugins is recommended as it allows you to easily add, modify and/or remove organized code.
 
 There are 2 ways to create a plugin in NutScript:
@@ -16,7 +14,7 @@ There are 2 ways to create a plugin in NutScript:
 1. Create a new folder in the plugins folder. Name the folder whatever the plugin's name is. (e.g. ```vendor```).
 2. Create a new file within the plugin folder. Name it ```sh_plugin.lua```.
 
-## **Starting**
+### **Starting**
 
 In your plugin/```sh_plugin.lua``` file, include the following:
 
@@ -28,7 +26,7 @@ PLUGIN.desc = "A simple plugin that does something."
 
 Here you'll need to set your plugin's name, the author, and a short description of what it does.
 
-## **Hooking**
+### **Hooking**
 
 Normally, to hook a function, you'll need to use the following syntax:
 ```lua
@@ -45,7 +43,7 @@ function PLUGIN:Think()
 end
 ```
 
-### **Why PLUGIN?**
+#### **Why PLUGIN?**
 
 The PLUGIN prefix allows us to tell NutScript that we are extending the functions we are going to use, rather than completely replace them with the ones we set inside the file. This prevents code from being removed from execution and therefore breaking some aspects of the gamemode or other plugins.
 
@@ -72,7 +70,7 @@ Advantages of using PLUGIN:
     ```
 
     is a table that is available (within the respective realm) to all files/scopes within the plugin, as well as accessible from other plugins (```nut.plugin.list.permadeath.curEnts```).
-## **Example**
+### **Example**
 
 An example of a plugin creation can be found [here](development_examples/Plugin_Example.md).
 

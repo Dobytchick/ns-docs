@@ -1,8 +1,6 @@
-# Plugin Example
-
 We will take Permakill as an example of a simple plugin. This plugin automatically bans a character if it dies in certain ways.
 
-## **Starting**
+### **Starting**
 
 1. We will create a new file called ```permakill.lua``` in the plugins folder.
 2. In it, we will add the following initial information:
@@ -13,7 +11,7 @@ We will take Permakill as an example of a simple plugin. This plugin automatical
     PLUGIN.desc = "Adds permanent death in the server options."
     ```
 
-## **Configuration**
+### **Configuration**
 
 We want our plugin to be easily configurated in-game easily, like if it's active at all or dying by falling off a high place will effectively kill our character permanently. Fortunately, NutScript's Framework Libraries are very rich, and will allow us in this process.
 
@@ -45,13 +43,13 @@ nut.config.add("pkWorld", false, "Whether or not world and self damage produce p
 })
 ```
 
-## **Functions**
+### **Functions**
 
 To apply our configurations, we will want somewhere to call them. In this case we will call them inside functions, but it's not limited to it. You can call them from item functions, entities, derma and so on.
 
 We will use the default Gmod functions [PlayerDeath](https://wiki.facepunch.com/gmod/GM:PlayerDeath) and [PlayerSpawn](https://wiki.facepunch.com/gmod/GM:PlayerSpawn), but prefixed with PLUGIN instead of GM, to prevent overriding them.
 
-### **PlayerDeath**
+#### **PlayerDeath**
 
 First, the PlayerDeath function. The function will have the same arguments as its GM counterpart, therefore:
 
@@ -104,7 +102,7 @@ function PLUGIN:PlayerDeath(client, inflictor, attacker)
 end
 ```
 
-### **PlayerSpawn**
+#### **PlayerSpawn**
 
 Now that we have set the ways the player is permakilled, we will set what happens when a permakilled player tries to spawn again.
 

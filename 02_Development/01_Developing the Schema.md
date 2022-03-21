@@ -1,12 +1,10 @@
-# Developing the Schema
-
-## **Initial Setup**
+### **Initial Setup**
 
 Make sure that you have the [Nutscript framework](https://github.com/NutScript/NutScript) already installed in the gamemodes folder (rename it to ```nutscript```).
 In the same gamemodes plugin, place/create your schema folder, and name it as the name of your schema (hl2rp/cityrp/scprp)
 ![Example](https://i.imgur.com/bKgG8L0.png)
 
-## **The Main Schema Folder**
+### **The Main Schema Folder**
 
 Within the Schema folder, you must have 3 additional folders:
 
@@ -22,11 +20,11 @@ _**As a Rule of Thumb, you should not modify the gamemode folder at any point. P
 
 * The ```schema``` folder contains the core files of your schema.
 
-## **The Schema Folder**
+### **The Schema Folder**
 
 Within the ```schema``` folder, you must have 2 crucial folders: ```items``` and ```factions```, as well as a crucial file called ```sh_schema.lua```
 
-## **The Factions Folder**
+### **The Factions Folder**
 
 The ```factions``` folder is used to create new factions playable on your gamemode. Each faction is represented by their individual file.
 
@@ -63,13 +61,13 @@ FACTION_CUSTOM = FACTION.index -- mandatory, this allows the faction to be index
 
 [More information and options available for factions is available here.](development/Factions.md)
 
-## **The Items Folder**
+### **The Items Folder**
 
 The ```items``` folder contains all the items that your schema provides.
 
 There are 2 methods to adding items to your schema: single file items or via a base
 
-### **Single File Items**
+#### **Single File Items**
 
 You can add an item as a single file by creating one in the ```items``` folder directly. For example, if you want to create a potato item, you would create a new file called ```sh_potato.lua```
 
@@ -102,7 +100,7 @@ ITEM.functions.use = {
 }
 ```
 
-### **Using a Base**
+#### **Using a Base**
 
 Using a base is useful if you want multiple items that function relatively identical, such as foods or weapons.
 
@@ -163,7 +161,7 @@ The new milk item will inherit everything from the food base, such as the consum
 
 If you want multiple bases, create individual files in the base folder, and a new folder for each base type.
 
-## **The ```sh_schema.lua``` File**
+### **The ```sh_schema.lua``` File**
 
 The sh_schema.lua file is a crucial part of the schema. Upon creating it, enter the following code:
 
@@ -187,6 +185,6 @@ nut.util.includeDir("hooks") -- this allows all files within the hooks folder in
 
 Keep in mind that if you want to add folders that are default to nutscript, such as ```classes, meta``` or ```libs```, it is not necessary to include them.
 
-## **Developing Plugins**
+### **Developing Plugins**
 
-If you wish to create your own plugins, in order to keep the schema modular and organized, head over to [Developing Plugins](development/developingplugins.md).
+If you wish to create your own plugins, in order to keep the schema modular and organized, head over to [Developing Plugins](Developing%20Plugins.md).

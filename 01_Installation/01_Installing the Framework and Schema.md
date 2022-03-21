@@ -1,15 +1,13 @@
-# Installing the Framework and Schema
-
 Once you have both the framework and schema downloaded, locate the gamemodes folder in your garrysmod folder. This is located in the server's root folder (where the srcds executable is located).
 
 ![image](https://i.imgur.com/A3cLjbY.png)
 
-## Installing the Framework
+### Installing the Framework
 
 1. Place the downloaded framework folder into the gamemodes folder.
 2. Rename the framework folder to nutscript. (Case is important, as most server hosts run on Linux, which is case-sensitive)
 
-## Installing the Schema
+### Installing the Schema
 
 1. Place the downloaded schema folder into the gamemodes folder.
 2. Rename the schema folder into whatever you want your gamemode to be.
@@ -37,6 +35,6 @@ Once you have both the framework and schema downloaded, locate the gamemodes fol
 
 ![image](https://i.imgur.com/AeDDW7Z.png)
 
-### Congratulations, you have successfully installed NutScript
+#### Congratulations, you have successfully installed NutScript
 
 If you wish to further develop and/or modify your schema and gamemode, carry on over to [Developing the Schema](development/Developing_the_Schema.md).
