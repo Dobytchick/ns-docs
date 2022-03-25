@@ -38,3 +38,6 @@ When creating documents, this style guide should be consulted to keep everything
 2. The same can be done for categories.
 ![image](https://user-images.githubusercontent.com/20385440/159189574-4f6a8141-2104-41aa-928b-ec4cf22fc8c4.png)
 
+### Linking
+**Linking to other pages is not yet supported**
+
