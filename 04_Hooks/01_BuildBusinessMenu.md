@@ -1,5 +1,7 @@
 ### GM:BuildBusinessMenu(panel)
 
+#### Realm: `CLIENTSIDE`
+
 Called when a business tab is being built
 
 #### Example:

@@ -1,5 +1,7 @@
 ### GM:BuildHelpMenu(panel)
 
+#### Realm: `CLIENTSIDE`
+
 Called when the help menu is being built. You can add your own tabs.
 
 #### Example:

@@ -1,5 +1,7 @@
 ### GM:OnCharCreated(client, id)
 
+#### Realm: `SERVERSIDE`
+
 This hook builds help menu.
 
 #### Example:

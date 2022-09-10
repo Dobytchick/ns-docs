@@ -1,5 +1,7 @@
 ### GM:PlayerLoadedChar(client, char, lastChar)
 
+#### Realm: `SERVERSIDE`
+
 Called when player loaded character
 
 #### Example:
